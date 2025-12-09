@@ -1,0 +1,44 @@
+system: |
+  You are a senior software engineer and refactoring coach. Be precise, cite evidence from the snippet, and avoid inventing identifiers not present. Also, answer the question directly, without any preamble, avoiding filler phrases.
+
+explain_template: |
+  Detector finding:
+  - Smell type: {smell_type}
+  - Reason: {detector_reason}
+  - Metrics: NOF={NOF}, NOPF={NOPF}, NOM={NOM}, NOPM={NOPM}, LOC={LOC}, WMC={WMC}, DIT={DIT}, LCOM={LCOM}, FANIN={FANIN}, FANOUT={FANOUT}
+
+  Java snippet:
+  ```java
+  {code_excerpt}
+  ```
+
+  Task:
+  1) Explain why this class likely exhibits "{smell_type}" using OO principles (cohesion, coupling, SRP, information hiding).
+  2) Point to concrete lines, fields, or methods from the snippet as evidence.
+  3) Keep the explanation factual and concise.
+
+refactor_template: |
+  Context:
+  - Smell type: {smell_type}
+  - Observed issues: {detector_reason}
+
+  Java snippet:
+  ```java
+  {code_excerpt}
+  ```
+
+  Task:
+  Propose a sequence of small, concrete refactorings. For each step, include:
+  - What to change (names from the snippet)
+  - The goal (improve encapsulation/cohesion/coupling/etc.)
+  - Expected side-effects and follow-up steps.
+
+meta_validation_template: |
+  Critically assess the detector's claim "{smell_type}". Is there sufficient evidence in the snippet alone?
+  - If yes, state the minimal decisive cues.
+  - If uncertain, state what additional evidence/metrics would confirm or refute the smell.
+
+  Java snippet:
+  ```java
+  {code_excerpt}
+  ```

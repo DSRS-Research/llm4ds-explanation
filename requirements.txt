@@ -1,0 +1,31 @@
+# Core utilities
+pandas>=2.1
+numpy>=1.26
+pyyaml>=6.0
+requests>=2.32
+tqdm>=4.66
+jinja2>=3.1
+
+# Parsing and text handling
+openpyxl>=3.1
+regex>=2023.10
+javalang>=0.13.0   # for Java source parsing (optional)
+
+# LLM backends (choose one or both)
+vllm>=0.4.2        # GPU OpenAI-compatible server (requires CUDA)
+llama-cpp-python>=0.2.90  # local inference via GGUF (CPU/GPU/Metal)
+
+# Statistics and analysis
+scipy>=1.13
+matplotlib>=3.9
+seaborn>=0.13
+statsmodels>=0.14
+
+# Optional quality of life
+# tabulate>=0.9
+# pyarrow>=15.0      # for Parquet I/O
+# pandoc>=2.3        # for Markdown -> PDF (if you generate study packets as PDF)
+
+# Jupyter (optional)
+# notebook>=7.0
+# ipykernel>=6.0

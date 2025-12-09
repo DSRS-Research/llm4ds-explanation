@@ -1,0 +1,47 @@
+# macOS system files
+.DS_Store
+.Trashes
+._*
+
+# Thumbnails and resource forks
+.Spotlight-V100
+.TemporaryItems
+.fseventsd
+
+# Xcode-related files (if applicable)
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+build/
+*.hmap
+*.ipa
+*.app
+
+# Virtual environment
+venv/
+.env/
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# IDE/Editor files
+.idea/
+.vscode/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Test-related files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sensitive information
+.env
+secrets.toml
+
+# Log files
+*.log
